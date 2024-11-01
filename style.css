@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.audio{
+    display: block;
+}
+
+.soundbar{
+    height: 100vh;
+    border: 2px solid #000;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,6);
+    background: linear-gradient(90deg, rgba(0,0,6,1) 30%, rgba(15,0,1,1) 57%, rgba(91,86,85,1) 68%, rgba(84,84,87,1) 85%); 
+}
+
+.bar{
+    width: 20px;
+    height: 30px;
+    background-color: aqua;
+}
+.yellow{
+    transform: scaleY(2);
+    background-color: #fffb00;
+    animation-name: yellowColor;
+    animation-duration: 0.9s ;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+.green{
+    background-color: #3ff811;
+    animation-name: greenColor;
+    animation-duration: 3s ;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.red{
+    background-color: #f80404;
+    animation-name: redColor;
+    animation-duration: 2s ;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+.pink{
+    background-color: #f804f0;
+    animation-name: greenColor;
+    animation-duration: 3s ;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.blue{
+    background-color: #1404f8;
+    animation-name: redColor;
+    animation-duration: 1s ;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes yellowColor {
+    from{
+        height: 20px;
+    }
+    to{
+        height: 100px;
+    }
+    
+}
+
+@keyframes greenColor {
+    from{
+        transform: scaleY(5);
+    }
+    to{
+        transform: scaleY(1);
+    }
+    
+}
+
+@keyframes redColor {
+    from{
+        transform: scaleY(1);
+    }
+    to{
+        transform: scaleY(10);
+    }
+    
+}
+
+@keyframes greenColor {
+    from{
+        transform: scaleY(10);
+    }
+    to{
+        transform: scaleY(1);
+    }
+    
+}
+@keyframes redColor {
+    from{
+        transform: scaleY(1);
+    }
+    to{
+        transform: scaleY(10);
+    }
+    
+}
